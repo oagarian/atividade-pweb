@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Funções</title>
+    <style>
+        .container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Questão 1 -->
+    <div class="container">
+        <h2>Questão 1: MAIOR_MENOR</h2>
+        <label>Insira 5 números inteiros:</label>
+        <input type="number" id="num_a" placeholder="Número 1">
+        <input type="number" id="num_b" placeholder="Número 2">
+        <input type="number" id="num_c" placeholder="Número 3">
+        <input type="number" id="num_d" placeholder="Número 4">
+        <input type="number" id="num_e" placeholder="Número 5">
+        <button onclick="descobrirMaiorEMenor()">Calcular</button>
+        <div class="result" id="resultado1"></div>
+    </div>
+
+    <!-- Questão 2 -->
+    <div class="container">
+        <h2>Questão 2: VOGAL</h2>
+        <label>Insira um caractere:</label>
+        <input type="text" id="caractere" maxlength="1" placeholder="Caractere">
+        <button onclick="verificarVogal()">Verificar</button>
+        <div class="result" id="resultado2"></div>
+    </div>
+
+    <!-- Questão 3 -->
+    <div class="container">
+        <h2>Questão 3: LIMITES</h2>
+        <label>Insira o limite inferior:</label>
+        <input type="number" id="limiteInferior" placeholder="Limite Inferior">
+        <label>Insira o limite superior:</label>
+        <input type="number" id="limiteSuperior" placeholder="Limite Superior">
+        <button onclick="calcularLimites()">Calcular</button>
+        <div class="result" id="resultado3"></div>
+    </div>
+
+    <!-- Questão 4 -->
+    <div class="container">
+        <h2>Questão 4: ORDEM</h2>
+        <label>Insira 3 números inteiros:</label>
+        <input type="number" id="valor1" placeholder="Valor 1">
+        <input type="number" id="valor2" placeholder="Valor 2">
+        <input type="number" id="valor3" placeholder="Valor 3">
+        <button onclick="ordenarValores()">Ordenar</button>
+        <div class="result" id="resultado4"></div>
+    </div>
+
+    <!-- Questão 5 -->
+    <div class="container">
+        <h2>Questão 5: POSITIVO_NEGATIVO</h2>
+        <label>Insira um número inteiro:</label>
+        <input type="number" id="valorPosNeg" placeholder="Número">
+        <button onclick="verificarPositivoNegativo()">Verificar</button>
+        <div class="result" id="resultado5"></div>
+    </div>
+
+    <!-- Questão 6 -->
+    <div class="container">
+        <h2>Questão 6: PAR_IMPAR</h2>
+        <label>Insira um número inteiro:</label>
+        <input type="number" id="valorParImpar" placeholder="Número">
+        <button onclick="verificarParImpar()">Verificar</button>
+        <div class="result" id="resultado6"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
