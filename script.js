@@ -4,7 +4,7 @@ function MAIOR_MENOR(a, b, c, d, e) {
     const maior = Math.max(...numeros);
     const menor = Math.min(...numeros);
 
-    document.getElementById('resultado1').innerText = `Maior valor: ${maior}, Menor valor: ${menor}`;
+    document.getElementById('resultado1').innerText = `Maior valor: ${maior} e menor valor: ${menor}`;
 }
 
 function descobrirMaiorEMenor() {
@@ -20,7 +20,6 @@ function descobrirMaiorEMenor() {
 function VOGAL(c) {
     const vogais = ['a', 'e', 'i', 'o', 'u'];
     const resultado = vogais.includes(c) ? 1 : 0;
-
     document.getElementById('resultado2').innerText = `Resultado: ${resultado}`;
 }
 
@@ -42,7 +41,7 @@ function LIMITES(li, ls) {
         }
     }
 
-    document.getElementById('resultado3').innerText = `Números pares: ${pares.join(', ')}, Somatório: ${soma}`;
+    document.getElementById('resultado3').innerText = `Números pares: ${pares.join(', ')} \n Soma: ${soma}`;
 }
 
 function calcularLimites() {
@@ -53,7 +52,8 @@ function calcularLimites() {
 
 // Questão 4: ORDEM
 function ORDEM(a, b, c) {
-    const valores = [a, b, c].sort((x, y) => x - y);
+    const valores = [a, b, c];
+    valores.sort()
     document.getElementById('resultado4').innerText = `Valores ordenados: ${valores.join(', ')}`;
 }
 
